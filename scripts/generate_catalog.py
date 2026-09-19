@@ -32,7 +32,7 @@ except ImportError:
 # 示例(jsDelivr): https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@main/
 # 示例(GitHub Pages): https://GitHub用户名.github.io/仓库名/
 # ============================================================
-BASE_URL = "https://cdn.jsdelivr.net/gh/[你的用户名]/[你的仓库名]@main/"
+BASE_URL = "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@main/"
 
 # 脚本所在目录的上一级 = 仓库根目录
 ROOT = Path(__file__).resolve().parent.parent
