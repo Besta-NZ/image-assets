@@ -1,6 +1,16 @@
 {
-  "version": "1789816271526",
-  "updated_at": "2026-09-19T11:11:11Z",
+  "version": "1789816822539",
+  "updated_at": "2026-09-19T11:20:22Z",
   "base_url": "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@main/",
-  "images": []
+  "images": [
+    {
+      "id": "001",
+      "name": "001",
+      "category": "default",
+      "thumb": "thumbs/001.jpg",
+      "image": "images/001.jpg",
+      "width": 1080,
+      "height": 1080
+    }
+  ]
 }

@@ -27,17 +27,17 @@ jobs:
       - name: Install dependencies
         run: pip install Pillow
 
-      - name: Generate catalog.json
+      - name: Generate catalog.json (auto-create thumbs if missing)
         run: python scripts/generate_catalog.py
 
-      - name: Commit & push catalog.json (if changed)
+      - name: Commit & push changes (if any)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json
-          if git diff --quiet --cached catalog.json; then
-            echo "catalog.json 没有变化，跳过提交。"
+          git add catalog.json thumbs/
+          if git diff --quiet --cached catalog.json thumbs/; then
+            echo "catalog.json 和 thumbs/ 都没有变化，跳过提交。"
           else
-            git commit -m "chore: regenerate catalog.json [skip ci]"
+            git commit -m "chore: regenerate catalog.json & thumbs [skip ci]"
             git push
           fi
