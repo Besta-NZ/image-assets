@@ -1,6 +1,6 @@
 {
-  "version": "1789816836948",
-  "updated_at": "2026-09-19T11:20:36Z",
+  "version": "1790159189814",
+  "updated_at": "2026-09-23T10:26:29Z",
   "base_url": "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@main/",
   "images": [
     {
@@ -9,6 +9,168 @@
       "category": "default",
       "thumb": "thumbs/001.jpg",
       "image": "images/001.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "002",
+      "name": "002",
+      "category": "default",
+      "thumb": "thumbs/002.jpg",
+      "image": "images/002.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "003",
+      "name": "003",
+      "category": "default",
+      "thumb": "thumbs/003.jpg",
+      "image": "images/003.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "004",
+      "name": "004",
+      "category": "default",
+      "thumb": "thumbs/004.jpg",
+      "image": "images/004.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "005",
+      "name": "005",
+      "category": "default",
+      "thumb": "thumbs/005.jpg",
+      "image": "images/005.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "006",
+      "name": "006",
+      "category": "default",
+      "thumb": "thumbs/006.jpg",
+      "image": "images/006.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "007",
+      "name": "007",
+      "category": "default",
+      "thumb": "thumbs/007.jpg",
+      "image": "images/007.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "008",
+      "name": "008",
+      "category": "default",
+      "thumb": "thumbs/008.jpg",
+      "image": "images/008.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "009",
+      "name": "009",
+      "category": "default",
+      "thumb": "thumbs/009.jpg",
+      "image": "images/009.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "010",
+      "name": "010",
+      "category": "default",
+      "thumb": "thumbs/010.jpg",
+      "image": "images/010.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "013",
+      "name": "013",
+      "category": "default",
+      "thumb": "thumbs/013.jpg",
+      "image": "images/013.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "014",
+      "name": "014",
+      "category": "default",
+      "thumb": "thumbs/014.jpg",
+      "image": "images/014.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "015",
+      "name": "015",
+      "category": "default",
+      "thumb": "thumbs/015.jpg",
+      "image": "images/015.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "016",
+      "name": "016",
+      "category": "default",
+      "thumb": "thumbs/016.jpg",
+      "image": "images/016.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "017",
+      "name": "017",
+      "category": "default",
+      "thumb": "thumbs/017.jpg",
+      "image": "images/017.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "018",
+      "name": "018",
+      "category": "default",
+      "thumb": "thumbs/018.jpg",
+      "image": "images/018.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "019",
+      "name": "019",
+      "category": "default",
+      "thumb": "thumbs/019.jpg",
+      "image": "images/019.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "020",
+      "name": "020",
+      "category": "default",
+      "thumb": "thumbs/020.jpg",
+      "image": "images/020.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "021",
+      "name": "021",
+      "category": "default",
+      "thumb": "thumbs/021.jpg",
+      "image": "images/021.jpg",
       "width": 1080,
       "height": 1080
     }
