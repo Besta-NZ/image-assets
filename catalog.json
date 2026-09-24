@@ -1,6 +1,6 @@
 {
-  "version": "1790159464986",
-  "updated_at": "2026-09-23T10:31:04Z",
+  "version": "1790217557302",
+  "updated_at": "2026-09-24T02:39:17Z",
   "base_url": "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@main/",
   "images": [
     {
@@ -90,6 +90,24 @@
       "category": "default",
       "thumb": "thumbs/010.jpg",
       "image": "images/010.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "011",
+      "name": "011",
+      "category": "default",
+      "thumb": "thumbs/011.jpg",
+      "image": "images/011.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "012",
+      "name": "012",
+      "category": "default",
+      "thumb": "thumbs/012.jpg",
+      "image": "images/012.jpg",
       "width": 1080,
       "height": 1080
     },
