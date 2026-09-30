@@ -543,5 +543,31 @@
       "width": 1080,
       "height": 1080
     }
+  ],
+  "backgrounds": [
+    {
+      "id": "bg_theme_1",
+      "image": "backgrounds_opt/bg_theme_1.jpg",
+      "width": 816,
+      "height": 1440
+    },
+    {
+      "id": "bg_theme_2",
+      "image": "backgrounds_opt/bg_theme_2.jpg",
+      "width": 816,
+      "height": 1440
+    },
+    {
+      "id": "bg_theme_3",
+      "image": "backgrounds_opt/bg_theme_3.jpg",
+      "width": 816,
+      "height": 1440
+    },
+    {
+      "id": "bg_theme_4",
+      "image": "backgrounds_opt/bg_theme_4.jpg",
+      "width": 816,
+      "height": 1440
+    }
   ]
 }
