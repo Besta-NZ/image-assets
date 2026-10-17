@@ -1,12 +1,12 @@
 {
-  "version": "1790730169225",
-  "updated_at": "2026-09-30T01:02:49Z",
+  "version": "1792203576564",
+  "updated_at": "2026-10-17T02:19:36Z",
   "base_url": "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@latest/",
   "images": [
     {
       "id": "001",
       "name": "001",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/001.jpg",
       "image": "images/001.jpg",
       "width": 1080,
@@ -15,7 +15,7 @@
     {
       "id": "002",
       "name": "002",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/002.jpg",
       "image": "images/002.jpg",
       "width": 1080,
@@ -24,7 +24,7 @@
     {
       "id": "003",
       "name": "003",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/003.jpg",
       "image": "images/003.jpg",
       "width": 1080,
@@ -33,7 +33,7 @@
     {
       "id": "004",
       "name": "004",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/004.jpg",
       "image": "images/004.jpg",
       "width": 1080,
@@ -42,7 +42,7 @@
     {
       "id": "005",
       "name": "005",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/005.jpg",
       "image": "images/005.jpg",
       "width": 1080,
@@ -51,7 +51,7 @@
     {
       "id": "006",
       "name": "006",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/006.jpg",
       "image": "images/006.jpg",
       "width": 1080,
@@ -60,7 +60,7 @@
     {
       "id": "007",
       "name": "007",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/007.jpg",
       "image": "images/007.jpg",
       "width": 1080,
@@ -69,7 +69,7 @@
     {
       "id": "008",
       "name": "008",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/008.jpg",
       "image": "images/008.jpg",
       "width": 1080,
@@ -78,7 +78,7 @@
     {
       "id": "009",
       "name": "009",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/009.jpg",
       "image": "images/009.jpg",
       "width": 1080,
@@ -87,7 +87,7 @@
     {
       "id": "010",
       "name": "010",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/010.jpg",
       "image": "images/010.jpg",
       "width": 1080,
@@ -96,7 +96,7 @@
     {
       "id": "011",
       "name": "011",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/011.jpg",
       "image": "images/011.jpg",
       "width": 1080,
@@ -105,7 +105,7 @@
     {
       "id": "012",
       "name": "012",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/012.jpg",
       "image": "images/012.jpg",
       "width": 1080,
@@ -114,7 +114,7 @@
     {
       "id": "013",
       "name": "013",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/013.jpg",
       "image": "images/013.jpg",
       "width": 1080,
@@ -123,7 +123,7 @@
     {
       "id": "014",
       "name": "014",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/014.jpg",
       "image": "images/014.jpg",
       "width": 1080,
@@ -132,7 +132,7 @@
     {
       "id": "015",
       "name": "015",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/015.jpg",
       "image": "images/015.jpg",
       "width": 1080,
@@ -141,7 +141,7 @@
     {
       "id": "016",
       "name": "016",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/016.jpg",
       "image": "images/016.jpg",
       "width": 1080,
@@ -150,7 +150,7 @@
     {
       "id": "017",
       "name": "017",
-      "category": "default",
+      "category": "flowers",
       "thumb": "thumbs/017.jpg",
       "image": "images/017.jpg",
       "width": 1080,
@@ -159,7 +159,7 @@
     {
       "id": "018",
       "name": "018",
-      "category": "default",
+      "category": "flowers",
       "thumb": "thumbs/018.jpg",
       "image": "images/018.jpg",
       "width": 1080,
@@ -168,7 +168,7 @@
     {
       "id": "019",
       "name": "019",
-      "category": "default",
+      "category": "flowers",
       "thumb": "thumbs/019.jpg",
       "image": "images/019.jpg",
       "width": 1080,
@@ -177,7 +177,7 @@
     {
       "id": "020",
       "name": "020",
-      "category": "default",
+      "category": "flowers",
       "thumb": "thumbs/020.jpg",
       "image": "images/020.jpg",
       "width": 1080,
@@ -186,7 +186,7 @@
     {
       "id": "021",
       "name": "021",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/021.jpg",
       "image": "images/021.jpg",
       "width": 1080,
@@ -195,7 +195,7 @@
     {
       "id": "022",
       "name": "022",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/022.jpg",
       "image": "images/022.jpg",
       "width": 1080,
@@ -204,7 +204,7 @@
     {
       "id": "023",
       "name": "023",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/023.jpg",
       "image": "images/023.jpg",
       "width": 1080,
@@ -213,7 +213,7 @@
     {
       "id": "024",
       "name": "024",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/024.jpg",
       "image": "images/024.jpg",
       "width": 1080,
@@ -222,7 +222,7 @@
     {
       "id": "025",
       "name": "025",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/025.jpg",
       "image": "images/025.jpg",
       "width": 1080,
@@ -231,7 +231,7 @@
     {
       "id": "026",
       "name": "026",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/026.jpg",
       "image": "images/026.jpg",
       "width": 1080,
@@ -240,7 +240,7 @@
     {
       "id": "027",
       "name": "027",
-      "category": "default",
+      "category": "cartoon",
       "thumb": "thumbs/027.jpg",
       "image": "images/027.jpg",
       "width": 1080,
@@ -249,7 +249,7 @@
     {
       "id": "028",
       "name": "028",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/028.jpg",
       "image": "images/028.jpg",
       "width": 1080,
@@ -258,7 +258,7 @@
     {
       "id": "029",
       "name": "029",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/029.jpg",
       "image": "images/029.jpg",
       "width": 1080,
@@ -267,7 +267,7 @@
     {
       "id": "030",
       "name": "030",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/030.jpg",
       "image": "images/030.jpg",
       "width": 1080,
@@ -276,7 +276,7 @@
     {
       "id": "031",
       "name": "031",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/031.jpg",
       "image": "images/031.jpg",
       "width": 1080,
@@ -285,7 +285,7 @@
     {
       "id": "032",
       "name": "032",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/032.jpg",
       "image": "images/032.jpg",
       "width": 1081,
@@ -294,7 +294,7 @@
     {
       "id": "033",
       "name": "033",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/033.jpg",
       "image": "images/033.jpg",
       "width": 1080,
@@ -303,7 +303,7 @@
     {
       "id": "034",
       "name": "034",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/034.jpg",
       "image": "images/034.jpg",
       "width": 1080,
@@ -312,7 +312,7 @@
     {
       "id": "035",
       "name": "035",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/035.jpg",
       "image": "images/035.jpg",
       "width": 1080,
@@ -321,7 +321,7 @@
     {
       "id": "036",
       "name": "036",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/036.jpg",
       "image": "images/036.jpg",
       "width": 1080,
@@ -330,7 +330,7 @@
     {
       "id": "037",
       "name": "037",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/037.jpg",
       "image": "images/037.jpg",
       "width": 1080,
@@ -339,7 +339,7 @@
     {
       "id": "038",
       "name": "038",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/038.jpg",
       "image": "images/038.jpg",
       "width": 1080,
@@ -348,7 +348,7 @@
     {
       "id": "039",
       "name": "039",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/039.jpg",
       "image": "images/039.jpg",
       "width": 1080,
@@ -357,7 +357,7 @@
     {
       "id": "040",
       "name": "040",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/040.jpg",
       "image": "images/040.jpg",
       "width": 1080,
@@ -366,7 +366,7 @@
     {
       "id": "041",
       "name": "041",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/041.jpg",
       "image": "images/041.jpg",
       "width": 1080,
@@ -375,7 +375,7 @@
     {
       "id": "042",
       "name": "042",
-      "category": "default",
+      "category": "other",
       "thumb": "thumbs/042.jpg",
       "image": "images/042.jpg",
       "width": 1080,
@@ -384,7 +384,7 @@
     {
       "id": "043",
       "name": "043",
-      "category": "default",
+      "category": "other",
       "thumb": "thumbs/043.jpg",
       "image": "images/043.jpg",
       "width": 1080,
@@ -393,7 +393,7 @@
     {
       "id": "044",
       "name": "044",
-      "category": "default",
+      "category": "animals",
       "thumb": "thumbs/044.jpg",
       "image": "images/044.jpg",
       "width": 1080,
@@ -402,7 +402,7 @@
     {
       "id": "045",
       "name": "045",
-      "category": "default",
+      "category": "animals",
       "thumb": "thumbs/045.jpg",
       "image": "images/045.jpg",
       "width": 1080,
@@ -411,7 +411,7 @@
     {
       "id": "046",
       "name": "046",
-      "category": "default",
+      "category": "animals",
       "thumb": "thumbs/046.jpg",
       "image": "images/046.jpg",
       "width": 1080,
@@ -420,7 +420,7 @@
     {
       "id": "047",
       "name": "047",
-      "category": "default",
+      "category": "animals",
       "thumb": "thumbs/047.jpg",
       "image": "images/047.jpg",
       "width": 1080,
@@ -429,7 +429,7 @@
     {
       "id": "048",
       "name": "048",
-      "category": "default",
+      "category": "food",
       "thumb": "thumbs/048.jpg",
       "image": "images/048.jpg",
       "width": 1080,
@@ -438,7 +438,7 @@
     {
       "id": "049",
       "name": "049",
-      "category": "default",
+      "category": "food",
       "thumb": "thumbs/049.jpg",
       "image": "images/049.jpg",
       "width": 1080,
@@ -447,7 +447,7 @@
     {
       "id": "050",
       "name": "050",
-      "category": "default",
+      "category": "food",
       "thumb": "thumbs/050.jpg",
       "image": "images/050.jpg",
       "width": 1080,
@@ -456,7 +456,7 @@
     {
       "id": "051",
       "name": "051",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/051.jpg",
       "image": "images/051.jpg",
       "width": 1080,
@@ -465,7 +465,7 @@
     {
       "id": "052",
       "name": "052",
-      "category": "default",
+      "category": "nature",
       "thumb": "thumbs/052.jpg",
       "image": "images/052.jpg",
       "width": 1080,
@@ -474,7 +474,7 @@
     {
       "id": "053",
       "name": "053",
-      "category": "default",
+      "category": "other",
       "thumb": "thumbs/053.jpg",
       "image": "images/053.jpg",
       "width": 1080,
@@ -483,7 +483,7 @@
     {
       "id": "054",
       "name": "054",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/054.jpg",
       "image": "images/054.jpg",
       "width": 1080,
@@ -492,7 +492,7 @@
     {
       "id": "055",
       "name": "055",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/055.jpg",
       "image": "images/055.jpg",
       "width": 1080,
@@ -501,7 +501,7 @@
     {
       "id": "056",
       "name": "056",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/056.jpg",
       "image": "images/056.jpg",
       "width": 1080,
@@ -510,7 +510,7 @@
     {
       "id": "057",
       "name": "057",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/057.jpg",
       "image": "images/057.jpg",
       "width": 1080,
@@ -519,7 +519,7 @@
     {
       "id": "058",
       "name": "058",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/058.jpg",
       "image": "images/058.jpg",
       "width": 1080,
@@ -528,7 +528,7 @@
     {
       "id": "059",
       "name": "059",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/059.jpg",
       "image": "images/059.jpg",
       "width": 1080,
@@ -537,37 +537,11 @@
     {
       "id": "060",
       "name": "060",
-      "category": "default",
+      "category": "city",
       "thumb": "thumbs/060.jpg",
       "image": "images/060.jpg",
       "width": 1080,
       "height": 1080
-    }
-  ],
-  "backgrounds": [
-    {
-      "id": "bg_theme_1",
-      "image": "backgrounds_opt/bg_theme_1.jpg",
-      "width": 816,
-      "height": 1440
-    },
-    {
-      "id": "bg_theme_2",
-      "image": "backgrounds_opt/bg_theme_2.jpg",
-      "width": 816,
-      "height": 1440
-    },
-    {
-      "id": "bg_theme_3",
-      "image": "backgrounds_opt/bg_theme_3.jpg",
-      "width": 816,
-      "height": 1440
-    },
-    {
-      "id": "bg_theme_4",
-      "image": "backgrounds_opt/bg_theme_4.jpg",
-      "width": 816,
-      "height": 1440
     }
   ]
 }
