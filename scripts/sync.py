@@ -50,6 +50,11 @@ ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 THUMBS_DIR = ROOT / "thumbs"
 OUTPUT_FILE = ROOT / "catalog.json"
+CATEGORY_FILE = ROOT / "categories.json"
+
+# 有效分类集合（与 App 端 cat_* 本地化 key 对应；新增分类需 App 发版补翻译）
+VALID_CATEGORIES = {"animals", "flowers", "nature", "cartoon", "food", "city", "other"}
+CATEGORY_FALLBACK = "other"
 
 SUPPORTED_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 THUMB_FALLBACK_EXT = ".jpg"
@@ -148,9 +153,46 @@ def sync_thumbnails(thumb_width: int, force: bool) -> dict:
     return stats
 
 
+# ============================================================
+# 分类映射
+# ============================================================
+def load_categories() -> dict:
+    """读取 categories.json（id → 分类）。缺失或损坏时返回空表（全部走兜底）。"""
+    if not CATEGORY_FILE.exists():
+        print(f"[WARN] 未找到 {CATEGORY_FILE.name}，所有图片将归入 {CATEGORY_FALLBACK}")
+        return {}
+    try:
+        data = json.loads(CATEGORY_FILE.read_text(encoding="utf-8"))
+        return {
+            str(k).strip(): str(v).strip()
+            for k, v in data.items()
+            if str(v).strip() in VALID_CATEGORIES
+        }
+    except Exception as e:
+        print(f"[WARN] {CATEGORY_FILE.name} 解析失败（{e}），所有图片归入 {CATEGORY_FALLBACK}")
+        return {}
+
+
+def resolve_category(stem: str, categories: dict) -> str:
+    """解析单张图片分类：显式映射表 > 文件名前缀 > other 兜底。
+
+    文件名前缀规则：flowers_rose / animals-061 → 取首个 _ 或 - 前缀自动归类，
+    新增图片可免登记映射表。
+    """
+    cat = categories.get(stem)
+    if cat:
+        return cat
+    prefix = stem.split("_", 1)[0].split("-", 1)[0].strip().lower()
+    if prefix in VALID_CATEGORIES and prefix != stem:
+        return prefix
+    print(f"[WARN] 未登记分类：{stem} → {CATEGORY_FALLBACK}（可在 categories.json 补登）")
+    return CATEGORY_FALLBACK
+
+
 def build_catalog() -> list[dict]:
     """构建 catalog 的 images 数组。"""
     images: list[dict] = []
+    categories = load_categories()
 
     if not IMAGES_DIR.exists():
         return images
@@ -176,7 +218,7 @@ def build_catalog() -> list[dict]:
         images.append({
             "id": image_file.stem,
             "name": image_file.stem,
-            "category": "default",
+            "category": resolve_category(image_file.stem, categories),
             "thumb": f"thumbs/{thumb.name}",
             "image": f"images/{image_file.name}",
             "width": width,
@@ -272,7 +314,7 @@ def build_commit_message(stats: dict, custom_msg: str | None) -> str:
 
 def git_stage_all() -> None:
     """暂存 images/ thumbs/ catalog.json（Git 2.0+ 用目录会包含删除）。"""
-    git("add", "images/", "thumbs/", "catalog.json")
+    git("add", "images/", "thumbs/", "catalog.json", "categories.json")
 
 
 def git_commit(message: str) -> bool:
