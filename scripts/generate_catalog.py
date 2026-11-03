@@ -43,6 +43,11 @@ OUTPUT_FILE = ROOT / "catalog.json"
 SUPPORTED_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 THUMB_FALLBACK_EXT = ".jpg"
 
+# 分类规则与 sync.py 保持一致：categories.json 显式映射 > 文件名前缀 > other 兜底
+CATEGORY_FILE = ROOT / "categories.json"
+VALID_CATEGORIES = {"animals", "flowers", "nature", "cartoon", "food", "city", "other"}
+CATEGORY_FALLBACK = "other"
+
 
 def generate_thumb(image_file: Path, out_dir: Path, width: int) -> Path:
     """从原图生成等比缩略图，输出为同名 .jpg。"""
@@ -65,8 +70,38 @@ def find_thumb(image_file: Path) -> Path | None:
     return None
 
 
+def load_categories() -> dict:
+    """读取 categories.json（id → 分类）。缺失或损坏时返回空表（全部走兜底）。"""
+    if not CATEGORY_FILE.exists():
+        print(f"[WARN] 未找到 {CATEGORY_FILE.name}，所有图片将归入 {CATEGORY_FALLBACK}")
+        return {}
+    try:
+        data = json.loads(CATEGORY_FILE.read_text(encoding="utf-8"))
+        return {
+            str(k).strip(): str(v).strip()
+            for k, v in data.items()
+            if str(v).strip() in VALID_CATEGORIES
+        }
+    except Exception as e:
+        print(f"[WARN] {CATEGORY_FILE.name} 解析失败（{e}），所有图片归入 {CATEGORY_FALLBACK}")
+        return {}
+
+
+def resolve_category(stem: str, categories: dict) -> str:
+    """解析单张图片分类：显式映射表 > 文件名前缀 > other 兜底。"""
+    cat = categories.get(stem)
+    if cat:
+        return cat
+    prefix = stem.split("_", 1)[0].split("-", 1)[0].strip().lower()
+    if prefix in VALID_CATEGORIES and prefix != stem:
+        return prefix
+    print(f"[WARN] 未登记分类：{stem} → {CATEGORY_FALLBACK}（可在 categories.json 补登）")
+    return CATEGORY_FALLBACK
+
+
 def build_catalog(thumb_width: int, force_thumb: bool) -> dict:
     images: list[dict] = []
+    categories = load_categories()
 
     if not IMAGES_DIR.exists():
         print(f"[WARN] images/ 目录不存在：{IMAGES_DIR}")
@@ -100,7 +135,7 @@ def build_catalog(thumb_width: int, force_thumb: bool) -> dict:
         images.append({
             "id": image_file.stem,
             "name": image_file.stem,
-            "category": "default",
+            "category": resolve_category(image_file.stem, categories),
             "thumb": f"thumbs/{thumb.name}",
             "image": f"images/{image_file.name}",
             "width": width,
