@@ -77,22 +77,94 @@ categories.json 显式映射  >  文件名前缀（animals_xxx → animals）  >
 - 新增图片**推荐**用分类前缀命名，免登记；用流水号命名则须在 `categories.json` 补一行
 - **新增分类**需 App 发版补 11 语言翻译（未收录分类旧版本回退显示英文原文，不阻塞）
 
-## 工作流程
+## 新增图片操作流程（完整）
 
-```bash
-# 新增图片后一键同步（生成缩略图 + catalog + git 推送）
-python scripts/sync.py -m "feat: add images"
+### Step 1：放图片
 
-# 仅更新分类映射后重新生成 catalog
-python scripts/sync.py
+将 JPEG 文件直接放入 `images/` **根目录**（脚本只扫一级，子文件夹不会被处理）。命名带分类前缀最省心（如 `flowers_daisy.jpg`、`nature_waterfall.jpg`），免登记自动归类。
+
+> ⚠️ **不要在现有 001-060 中间插入改名**——catalog.json 的 `id` 就是文件名 stem，App 端玩家进度按 id 存，改序号会错位。
+
+### Step 2：（可选）在 `categories.json` 登记分类
+
+如果用流水号命名或想显式指定分类，加一行即可：
+
+```json
+{
+  "061": "nature",
+  "flowers_rose": "flowers"
+}
 ```
 
-1. 图片放入 `images/`（命名带分类前缀，或在 `categories.json` 登记）
-2. 运行 `sync.py`：自动生成缩略图、按优先级归类、重建 `catalog.json`、commit + pull --rebase + push
-3. App 端下次启动经 Splash 拉取新 catalog（jsDelivr `@latest` 有分钟级缓存延迟）
+分类解析优先级：`categories.json 显式映射` > `文件名前缀` > `other 兜底 + WARN`。
+
+### Step 3：运行 sync.py（全自动，不需要传文件名或数量）
+
+> ⚠️ 本机必须用 `py` 启动器，**不要用 `python`**：本机 `python` 指向微软商店占位别名
+> （`C:\Users\zhou\AppData\Local\Microsoft\WindowsApps\python.exe`），执行时无任何输出并
+> 返回退出码 9009，脚本根本没跑起来。验证：`py --version` 应输出 Python 3.12.3。
+
+```bash
+# 最简用法：自动扫描 images/，变了什么就处理什么
+py scripts/sync.py
+
+# 自定义 commit message
+py scripts/sync.py -m "feat: add 5 new flower images"
+
+# 预演（只生成缩略图 + catalog，不碰 git）—— 第一次跑或改命名规则时推荐先 dry-run
+py scripts/sync.py --dry-run
+
+# 替换时文件 mtime 没变导致脚本没识别出来 → 强制重生成所有缩略图
+py scripts/sync.py --force
+
+# commit 了但暂时不想 push
+py scripts/sync.py --no-push
+```
+
+### sync.py 做了什么
+
+```
+images/ 扫描
+  ├── 新增文件   → 生成缩略图 + catalog 新增条目
+  ├── 同文件名覆盖 → 检测原图 mtime 比缩略图新 → 重生成缩略图 + catalog 更新条目
+  └── 删除文件   → thumbs/ 孤儿清理 + catalog 移除条目
+      ↓
+catalog.json 重写（含原图路径、缩略图路径、尺寸、分类）
+      ↓
+git add images/ thumbs/ catalog.json categories.json
+      ↓
+commit → pull --rebase（自动解决 catalog.json 冲突）→ push
+```
+
+App 端**无需重新发版**——在线图库模块会自动拉取新的 `catalog.json`，新图分钟级生效（jsDelivr `@latest` 缓存）。
+
+### 三种变更的自动处理对照
+
+| 操作 | 脚本行为 | git 变更 |
+|---|---|---|
+| 新增图片 | 生成缩略图 + 写入 catalog.json | `images/新增.jpg` + `thumbs/新增.jpg` + catalog.json 更新 |
+| 替换图片（同文件名覆盖） | mtime 检测 → 重生成缩略图 + catalog 更新 | 三个文件内容更新 |
+| 删除图片 | 清 thumbs/ 孤儿 + catalog 移除 + `git add` 包含删除 | 原图 + 缩略图 + catalog.json 更新 |
+
+### 参数一览
+
+| 参数 | 作用 | 默认值 |
+|---|---|---|
+| `-m / --message` | 自定义 commit message | 根据变更自动生成（如 `+5 new, ~2 replaced`） |
+| `--force` | 强制重生成**所有**缩略图（替换时 mtime 没变才需要） | `false` |
+| `--dry-run` | 只生成缩略图 + catalog，**不碰 git** | `false` |
+| `--no-push` | commit 了但不 push（网络不通或稍后手动 push） | `false` |
+| `--thumb-width` | 缩略图宽度 | `400` |
+
+### 前置依赖
+
+```bash
+pip install Pillow
+```
 
 ## 注意
 
-- `catalog.json` 由脚本自动生成，勿手工编辑
-- 生产新图请对照「素材规格规则」逐项自检：JPEG / 尺寸 / ≤500KB / RGB / 命名
+- `catalog.json` 由脚本自动生成，**勿手工编辑**
+- 生产新图请对照「素材规格规则」逐项自检：JPEG / 最长边 ≤1440px / ≤500KB / RGB / 命名
+- 脚本只扫 `images/` **一级目录**，子文件夹不处理（批量添加前请先把文件移到根目录）
 - jsDelivr 在部分网络（IPv6 优先环境）不可达——为已知环境限制，真机正常网络无碍
