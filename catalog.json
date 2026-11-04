@@ -1,6 +1,6 @@
 {
-  "version": "1793693235563",
-  "updated_at": "2026-11-03T08:07:15Z",
+  "version": "1793802718647",
+  "updated_at": "2026-11-04T14:31:58Z",
   "base_url": "https://cdn.jsdelivr.net/gh/Besta-NZ/image-assets@latest/",
   "images": [
     {
@@ -540,6 +540,339 @@
       "category": "city",
       "thumb": "thumbs/060.jpg",
       "image": "images/060.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_002_4x_s01",
+      "name": "animals_002_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_002_4x_s01.jpg",
+      "image": "images/animals_002_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_004_4x_s01",
+      "name": "animals_004_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_004_4x_s01.jpg",
+      "image": "images/animals_004_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_006_4x_s01",
+      "name": "animals_006_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_006_4x_s01.jpg",
+      "image": "images/animals_006_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_008_4x_s01",
+      "name": "animals_008_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_008_4x_s01.jpg",
+      "image": "images/animals_008_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_010_4x_s01",
+      "name": "animals_010_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_010_4x_s01.jpg",
+      "image": "images/animals_010_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_012_4x_s01",
+      "name": "animals_012_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_012_4x_s01.jpg",
+      "image": "images/animals_012_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_014_4x_s01",
+      "name": "animals_014_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_014_4x_s01.jpg",
+      "image": "images/animals_014_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_017",
+      "name": "animals_017",
+      "category": "animals",
+      "thumb": "thumbs/animals_017.jpg",
+      "image": "images/animals_017.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_019_4x_s01",
+      "name": "animals_019_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_019_4x_s01.jpg",
+      "image": "images/animals_019_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_028",
+      "name": "animals_028",
+      "category": "animals",
+      "thumb": "thumbs/animals_028.jpg",
+      "image": "images/animals_028.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_028_4x_s01",
+      "name": "animals_028_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_028_4x_s01.jpg",
+      "image": "images/animals_028_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_030_4x_s01",
+      "name": "animals_030_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_030_4x_s01.jpg",
+      "image": "images/animals_030_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_031_4x_s01",
+      "name": "animals_031_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_031_4x_s01.jpg",
+      "image": "images/animals_031_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_035",
+      "name": "animals_035",
+      "category": "animals",
+      "thumb": "thumbs/animals_035.jpg",
+      "image": "images/animals_035.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_038_4x_s01",
+      "name": "animals_038_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_038_4x_s01.jpg",
+      "image": "images/animals_038_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_039_4x_s01",
+      "name": "animals_039_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_039_4x_s01.jpg",
+      "image": "images/animals_039_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_061",
+      "name": "animals_061",
+      "category": "animals",
+      "thumb": "thumbs/animals_061.jpg",
+      "image": "images/animals_061.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_072_4x_s01",
+      "name": "animals_072_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_072_4x_s01.jpg",
+      "image": "images/animals_072_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_076_4x_s01",
+      "name": "animals_076_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_076_4x_s01.jpg",
+      "image": "images/animals_076_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_080",
+      "name": "animals_080",
+      "category": "animals",
+      "thumb": "thumbs/animals_080.jpg",
+      "image": "images/animals_080.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_082",
+      "name": "animals_082",
+      "category": "animals",
+      "thumb": "thumbs/animals_082.jpg",
+      "image": "images/animals_082.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_090",
+      "name": "animals_090",
+      "category": "animals",
+      "thumb": "thumbs/animals_090.jpg",
+      "image": "images/animals_090.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_094",
+      "name": "animals_094",
+      "category": "animals",
+      "thumb": "thumbs/animals_094.jpg",
+      "image": "images/animals_094.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_101_4x_s01",
+      "name": "animals_101_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_101_4x_s01.jpg",
+      "image": "images/animals_101_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_131_4x_s01",
+      "name": "animals_131_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_131_4x_s01.jpg",
+      "image": "images/animals_131_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_132_4x_s01",
+      "name": "animals_132_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_132_4x_s01.jpg",
+      "image": "images/animals_132_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_134_4x_s01",
+      "name": "animals_134_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_134_4x_s01.jpg",
+      "image": "images/animals_134_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_152_4x_s01",
+      "name": "animals_152_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_152_4x_s01.jpg",
+      "image": "images/animals_152_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_155_4x_s01",
+      "name": "animals_155_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_155_4x_s01.jpg",
+      "image": "images/animals_155_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_157_4x_s01",
+      "name": "animals_157_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_157_4x_s01.jpg",
+      "image": "images/animals_157_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_158",
+      "name": "animals_158",
+      "category": "animals",
+      "thumb": "thumbs/animals_158.jpg",
+      "image": "images/animals_158.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_160_4x_s01",
+      "name": "animals_160_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_160_4x_s01.jpg",
+      "image": "images/animals_160_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_172_4x_s01",
+      "name": "animals_172_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_172_4x_s01.jpg",
+      "image": "images/animals_172_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_176_4x_s01",
+      "name": "animals_176_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_176_4x_s01.jpg",
+      "image": "images/animals_176_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_178_4x_s01",
+      "name": "animals_178_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_178_4x_s01.jpg",
+      "image": "images/animals_178_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_185_4x_s01",
+      "name": "animals_185_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_185_4x_s01.jpg",
+      "image": "images/animals_185_4x_s01.jpg",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "id": "animals_200_4x_s01",
+      "name": "animals_200_4x_s01",
+      "category": "animals",
+      "thumb": "thumbs/animals_200_4x_s01.jpg",
+      "image": "images/animals_200_4x_s01.jpg",
       "width": 1080,
       "height": 1080
     },
